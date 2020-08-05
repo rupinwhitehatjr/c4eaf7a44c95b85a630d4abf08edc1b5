@@ -1,29 +1,75 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-   
-  
-<script type="text/javascript" src="main.js"></script>
-    
-    <link rel="stylesheet" href="style.css">
-
-    </head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+</head>
 <body>
-    <div>
-        <h1>Complete the story !</h1></br>
-        Enter details in below text input to complete the story.</br></br>
-        <div>1. Day of the week: <input type="text" id="input1" name="fname"></div></br>
-        <div>2. Family Member Name : <input type="text" id="input2" name="fname"></div></br>
-        <div>3. Animal Name: <input type="text" id="input3" name="fname"></div></br>
-        <div>4. Food items: <input type="text" id="input4" name="fname"></div></br>
-        <div>5. Type of drinks: <input type="text" id="input5" name="fname"></div></br>
-    </div>
-    <div></div>
-    <div><button onclick="FillDetails();">Complete Story</button>
-    </div>
-    <div id="divStory">
-        <p> On <span id="blank1">_______</span> we are going on a picnic ! I am going with my <span id="blank2">_______</span> and my favorite pet <span id="blank3">_______</span> . For launch we will eat <span id="blank4">_______ </span> and drink <span id="blank5">_______</span></p>
-    </div>
-    <p></p>
-</body>
 
+<div class="heading text-center">
+  <h1>Create a story</h1>
+  <p>Help Mellisa Create a Story</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3 datadiv">               
+          <div>
+            <h3>Name</h3>
+            <p><input class="input" type='text' id='nameinput'></input></p>            
+          </div>
+
+           <div>
+            <h3>Name of My Friend</h3>
+            <p><input class="input" type='text' id='friendname'></input></p>            
+          </div>
+
+           <div>
+            <h3>Name of a Pet</h3>
+            <p><input class="input" type='text' id='petname'></input></p>            
+          </div>
+
+           <div>
+            <h3>Favourite Food</h3>
+            <p><input class="input" type='text' id='foodname'></input></p>            
+          </div>
+
+           <div>
+            <h3>Favourite Drink</h3>
+            <p><input class="input" type='text' id='drinkname'></input></p>            
+          </div>
+       
+           <div>
+            <button type="button" class="btn btn-primary btn-lg" onclick="FillDetails()">Create My Custom story</button>           
+          </div>
+       
+
+       
+       
+    </div>
+    <div class="col-sm-1">
+      &nbsp;
+    </div>
+    <div class="col-sm-8 story">
+      <h2 class="storyheading">Read Story Here!</h2>
+      <p class="story">
+
+        Once upon a time there was a young girl named&nbsp;<span id='name0'>______</span>.
+        She had a pet named&nbsp;<span id='pet'>________</span>.
+        She went for a picnic with her friend&nbsp;<span id='friend0'>_______</span> to a nearby park.
+        <span id='friend1'>_______</span> cooked her favourite food <span id='food'>_______</span> to eat during the picnic, when they felt hungry after playing.
+        <span id='name1'>______</span> brought a bottle filled with healthy <span id="drink">_____</span> to feel refreshed and quench their thirst.
+
+    </p>
+     
+    </div>
+    
+  </div>
+</div>
+
+</body>
 </html>

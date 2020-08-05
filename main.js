@@ -1,18 +1,21 @@
 function FillDetails(){ 
  
- var first = document.getElementById("input1").value;
-   document.getElementById("blank1").innerHTML=first.toUpperCase();
-  
-   var second = document.getElementById("input2").value;
-   document.getElementById("blank2").innerHTML=second.toUpperCase();
+ var first = document.getElementById("nameinput").value;
+  document.getElementById("name0").innerHTML=first
+  document.getElementById("name1").innerHTML=first
   
   
-  var third = document.getElementById("input3").value;
-   document.getElementById("blank3").innerHTML=third.toUpperCase();
+   var second = document.getElementById("friendname").value;
+  document.getElementById("friend0").innerHTML=second;
+  document.getElementById("friend1").innerHTML=second;
   
-  var fourth = document.getElementById("input4").value;
-   document.getElementById("blank4").innerHTML=fourth.toUpperCase();
   
-  var fifth = document.getElementById("input5").value;
-   document.getElementById("blank5").innerHTML=fifth.toUpperCase();
+  var third = document.getElementById("petname").value;
+  document.getElementById("pet").innerHTML=third;
+  
+  var fourth = document.getElementById("foodname").value;
+  document.getElementById("food").innerHTML=fourth;
+  
+  var fifth = document.getElementById("drinkname").value;
+  document.getElementById("drink").innerHTML=fifth;
 }
